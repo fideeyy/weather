@@ -1,11 +1,85 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    
+<body style="background-image: url(landscape2.png);">
+  <div id="main" >
+    <header>
+        <div id="header">
+            <h1 id="h">Weather</h1>
+            <button id="btn">🌙</button> 
+        </div>
+
+        <div class="search">
+            <input type="text" id="srch" placeholder="Enter city name..." spellcheck="false">
+            <button id="bttn"><img src="search.png" alt="search"></button>
+             <button id="fav"><img id="heart" src="emptylove.png" alt=""></button>
+        </div>
+        <div id="loading">Loading...</div>
+    </header>
+     <div id="trans">
+    <div id="weathericon">
+        <img id="image" src="mist.png">
+        <p id="temp"></p>
+        <p id="cityName"></p>
+        <p id="description"></p>
+        <div id="col">
+            <div id="hum">
+                <img src="humidity.png">
+                <p id="humidity"></p>
+            </div>
+            <div id="win">
+                <p id="wind"></p>
+                <img src="wind.png">
+            </div>
+        </div>
+    </div></div><div id="favlist">
+    <h2>Favorite cities</h2>
+    <div id="favoriteList"></div>
+</div>
+
+</div>
+<!-- <div id="favlist">
+    <h2>Favorite cities</h2>
+    <div id="favoriteList"></div>
+</div> -->
+
+<!-- <br><br>
+<h2>5-Day forecast</h2><br><br>
+
+<div id="forecast">
+    <div id="day1">
+        <h2>Day1</h2>
+        <img src="" alt="img">
+        <p>description</p>
+    </div>
+    <div id="day2">
+        <h2>Day2</h2>
+        <img src="" alt="img">
+        <p>description</p>
+    </div>
+    <div id="day3">
+        <h2>Day3</h2>
+        <img src="" alt="img">
+        <p>description</p>
+    </div>
+    <div id="day4">
+        <h2>Day4</h2>
+        <img src="" alt="img">
+        <p>description</p>
+    </div>
+    <div id="day5">
+        <h2>Day5</h2>
+        <img src="" alt="img">
+        <p>description</p>
+    </div>
+</div> -->
+
+<script src="weather.js"></script>
 </body>
 </html>
