@@ -31,16 +31,13 @@ btn.addEventListener("click", ()=>{
     btn.textContent="☀️"
  }
 });
-
-
-
 srch.addEventListener("input",()=>{
     debounce(()=>{
         const city=srch.value.trim();
         if(city!==""){
             getWeather(city);
         }
-    },600)
+    },1000) 
 });
 //debounce fn
 let timer;

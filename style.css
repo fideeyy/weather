@@ -200,3 +200,157 @@ header{
   justify-content: space-between;
   align-items: center;
 }
+
+
+/* ---- Responsive ---- */
+@media (max-width: 600px) {
+    body {
+        margin-bottom: 30px;
+        padding: 10px;
+        background-size: cover;
+        background-position: center;
+    }
+
+    #main {
+        width: 100%;
+        max-width: 470px;
+        height: auto;
+    }
+
+    header {
+        width: 100%;
+    }
+
+    #header {
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+
+    #h {
+        font-size: 30px;
+    }
+
+    #btn {
+        height: 36px;
+        width: 36px;
+    }
+
+    .search {
+        width: 100%;
+        max-width: 400px;
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+
+    .search input {
+        width: 100%;
+        max-width: none;
+        height: 40px;
+    }
+
+    .search button {
+        height: 36px;
+        width: 32px;
+    }
+
+    #trans {
+        width: 100%;
+        max-width: 470px;
+    }
+
+    #weathericon {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    #weathericon img {
+        width: 130px;
+        height: 130px;
+    }
+
+    #temp {
+        font-size: 45px;
+    }
+
+    #description,
+    #cityName {
+        font-size: 16px;
+    }
+
+    #col {
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+
+    #hum,
+    #win {
+        font-size: 18px;
+    }
+
+    #hum img,
+    #win img {
+        height: 22px;
+        width: 22px;
+        margin-left: 8px;
+        margin-right: 8px;
+    }
+
+    #favlist {
+        width: 100%;
+        max-width: 470px;
+        padding: 12px;
+    }
+
+    #favlist h2 {
+        font-size: 18px;
+    }
+
+    #favoriteList p {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    #forecast {
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    #forecast > div {
+        height: 140px;
+        width: 45%;
+    }
+}
+
+@media (max-width: 400px) {
+    #h {
+        font-size: 24px;
+    }
+
+    #temp {
+        font-size: 36px;
+    }
+
+    #weathericon img {
+        width: 100px;
+        height: 100px;
+    }
+
+    #col {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #hum,
+    #win {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .search {
+        gap: 6px;
+    }
+
+    #forecast > div {
+        width: 100%;
+    }
+}
